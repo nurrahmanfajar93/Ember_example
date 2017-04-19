@@ -1,0 +1,13 @@
+<!--components-->
+{{#each model as | request|}}
+	<div class="col-md-4">
+	  <img src="https://randomuser.me/api/portraits/thumb/lego/3.jpg">
+	  <div>
+		<a href="https://www.google.com/search?q=gmail&ie=utf-8&oe=utf-8&client=firefox-b-ab#q={{request.email}}" 
+		   target="_blank" class="btn btn-success btn-md ">Follow</a>
+	  </div>
+	  <div>
+		<h5>{{request.email}}</h5>
+	  </div>
+	</div>
+{{/each}}
